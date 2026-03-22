@@ -210,11 +210,10 @@ export default function App() {
       
       {/* ── Navbar with TOP Highlighter ── */}
       <div className="bg-white dark:bg-[#111111] border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 transition-colors duration-300">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto px-4 sm:px-6 ">
           {/* Top Highlighter Bar */}
-          <div className="relative">
-            <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#CEFF1B]" />
-          </div>
+
+ 
           
           <div className="py-3 sm:py-4">
             <div className="flex items-center justify-between gap-4">
@@ -231,7 +230,7 @@ export default function App() {
                 </a>
                 <div className="relative">
                   <a href="#" className="text-sm font-bold text-gray-900 dark:text-white">
-                    Dashboard
+                    Dashboard 
                   </a>
                   {/* Highlighter for active nav item - positioned at top */}
                   <div className="absolute -top-[15px] sm:-top-[17px] left-0 right-0 h-[3px] bg-[#CEFF1B]" />
@@ -266,9 +265,9 @@ export default function App() {
                 <button className="hidden sm:flex w-8 h-8 sm:w-9 sm:h-9 rounded-full items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-colors">
                   <Bell className="w-4 h-4" />
                 </button>
-                <button className="hidden sm:flex w-8 h-8 sm:w-9 sm:h-9 rounded-full items-center justify-center text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-colors">
-                  <User className="w-4 h-4" />
-                </button>
+<button className="hidden sm:flex w-8 h-8 sm:w-9 sm:h-9 rounded-full items-center justify-center text-gray-600 dark:text-[#CEFF1B] hover:bg-gray-200 dark:hover:bg-[#CEFF1B]/50 bg-gray-50 dark:bg-[#CEFF1B]/60 border border-gray-200 dark:border-[#CEFF1B]/30 transition-colors">
+  <User className="w-4 h-4" />
+</button>
                 {/* Mobile menu button */}
                 <button
                   className="md:hidden w-8 h-8 flex items-center justify-center text-gray-600 dark:text-gray-400"
@@ -293,6 +292,12 @@ export default function App() {
               </div>
             </div>
           </div>
+
+<div className="relative w-full">
+  <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#CEFF1B] " />
+</div>
+
+
         </div>
       </div>
 
@@ -306,7 +311,7 @@ export default function App() {
       )}
 
       {/* ── Main Content ── */}
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div className=" w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         {/* Page Header */}
         <div className="mb-6 sm:mb-8">
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-1">Active Projects</h1>
